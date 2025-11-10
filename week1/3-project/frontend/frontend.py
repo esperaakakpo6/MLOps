@@ -16,7 +16,7 @@ if uploaded_file is not None:
     
     if st.button("Prédire"):
         # Envoyer les données en JSON (list de dicts)
-        response = requests.post("http://localhost:8000/predict", json=donnees.to_dict(orient='records'))
+        response = requests.post("https://mlops-vx6k.onrender.com/predict", json=donnees.to_dict(orient='records'))
         
         if response.status_code == 200:
             predictions = response.json()
