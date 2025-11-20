@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-st.title("Churn prediction mod")
+st.title("Churn prediction modele")
 st.markdown("Pour prédire le comportement de vos clients, chargez le fichier CSV contenant les caractéristiques suivantes sur vos clients:")
 st.markdown("""**['customerID', 'gender', 'SeniorCitizen', 'Partner', 'Dependents', 'tenure', 'PhoneService', 'MultipleLines', 'InternetService', 'OnlineSecurity']**""")
 
