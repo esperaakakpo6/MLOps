@@ -78,3 +78,6 @@ def predict(donnees: List[Customer]):
         error_trace = traceback.format_exc()
         print(f"Erreur dans /predict : {error_trace}")
         raise HTTPException(status_code=500, detail=f"Erreur interne : {str(e)}\nTrace : {error_trace}")
+
+def calcul_score(x):
+    return x**2  # après
