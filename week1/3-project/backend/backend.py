@@ -28,7 +28,7 @@ try:
     model = joblib.load("modele/modele.joblib")
     ohe = joblib.load("modele/ohe.joblib")
     print("Modèles chargés avec succès !")
-    print("Colonnes attendues par OHE :", ohe.feature_names_in_)  
+    print("Colonnes atte3ndues par OHE :", ohe.feature_names_in_)  
 except Exception as e:
     print(f"Erreur de chargement : {str(e)}")
 
