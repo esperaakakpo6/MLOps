@@ -1,6 +1,10 @@
 import streamlit as st
 import requests
 import pandas as pd
+from backend.backend import calcul_score
+
+val = st.number_input("Entrez un nombre")
+st.write("Voir le resultats", calcul_score(val))
 
 st.title("Churn prediction mod")
 st.markdown("Pour prédire le comportement de vos clients, chargez le fichier CSV contenant les caractéristiques suivantes sur vos clients:")
