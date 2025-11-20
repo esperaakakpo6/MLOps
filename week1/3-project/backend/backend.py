@@ -68,7 +68,7 @@ def predict(donnees: List[Customer]):
         
         # Résultat
         result = pd.DataFrame({
-            "customerID": customer_ids,
+            "customerID": customer_ids+'0',
             "Churn": pred_labels
         })
         
